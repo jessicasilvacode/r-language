@@ -1,18 +1,27 @@
+# An谩ises Cl铆nicas:
+# Sabendo que...
+# O n铆vel normal de eritr贸citos no sangue varia de 4.3 a 4.7;
+# O n铆vel normal de hemoglobinas no sangue varia de 13.5 a 17.5;
+# O n铆vel normal do hemat贸crito聽 varia de 39 a 50;
+# O n铆vel normal de leuc贸citos 茅 acima de 4000;
+# Escreva um programa que pergunta ao usu谩rio cada um desses par芒metros e tamb茅m o n煤mero de linf贸citos.
+# Posteriormente, o programa responde se o n铆vel de cada par芒metro hematol贸gico est谩 normal ou alterado, dependendo dos limiares apresentados acima.
+# O programa tamb茅m dever谩 calcular a CTL, dada por:
+# CTL = (leuc贸citos x linf贸citos)/100
 
-#an醝ses cl韓icas
 
-eritrocitos = as.numeric(readline(prompt = 'Valor de eritr骳itos (milh鉶 por mm3): '))
+eritrocitos = as.numeric(readline(prompt = 'Valor de eritr贸citos (milh茫o por mm3): '))
 hemoglobina = as.numeric(readline(prompt = 'Valor de hemoglobina (g/dL): '))
 hematocrito = as.numeric(readline(prompt = 'Valor de hematocrito (ml/dL): '))
-leucocitos = as.numeric(readline(prompt = 'Valor de leuc骳itos (milh鉶/mm3): '))
-linfocitos = as.numeric(readline(prompt = 'Valor e linf骳itos (%): '))
+leucocitos = as.numeric(readline(prompt = 'Valor de leuc贸citos (milh茫o/mm3): '))
+linfocitos = as.numeric(readline(prompt = 'Valor e linf贸citos (%): '))
 
 CLT = (leucocitos*linfocitos)/100
 
 if(eritrocitos > 4.3 && eritrocitos < 4.7){
-  print('Valor normal de eritr骳itos.')
+  print('Valor normal de eritr贸citos.')
 }else{
-  print('Valor alterado de eritr骳itos.')
+  print('Valor alterado de eritr贸citos.')
 }
 
 if(hemoglobina > 13.5 && hemoglobina < 17.5){
@@ -22,15 +31,15 @@ if(hemoglobina > 13.5 && hemoglobina < 17.5){
 }
 
 if(hematocrito > 39 && hematocrito < 50){
-  print('Valor normal de hemat骳rito.')
+  print('Valor normal de hemat贸crito.')
 }else{
-  print('Valor alterado de hemat骳rito.')
+  print('Valor alterado de hemat贸crito.')
 }
 
 if(leucocitos > 4000){
-  print('N鷐ero normal de leuc骳itos.')
+  print('N煤mero normal de leuc贸citos.')
 }else{
-  print('N鷐ero alterado de leuc骳itos.')
+  print('N煤mero alterado de leuc贸citos.')
 }
 
 paste('Valor de CLT =', CLT)
